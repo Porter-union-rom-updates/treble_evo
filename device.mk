@@ -1,9 +1,9 @@
 TARGET_GAPPS_ARCH := arm64
 include build/make/target/product/aosp_arm64.mk
 $(call inherit-product, device/phh/treble/base.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-$(call inherit-product, device/lineage/sepolicy/common/sepolicy.mk)
-$(call inherit-product, vendor/lineage/config/BoardConfigSoong.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, device/infinity/sepolicy/common/sepolicy.mk)
+$(call inherit-product, vendor/infinity/config/BoardConfigSoong.mk)
 
 # Overwrite the inherited "emulator" characteristics
 PRODUCT_CHARACTERISTICS := device
@@ -26,13 +26,13 @@ override BOARD_EXT4_SHARE_DUP_BLOCKS := true
 
 # OTA
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.system.ota.json_url=https://raw.githubusercontent.com/mytja/treble_evo/vic/ota.json
+#    ro.system.ota.json_url=https://raw.githubusercontent.com/mytja/treble_evo/vic/ota.json
 
 # SELinux
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 
 # Evolution X
-EVO_BUILD_TYPE := Unofficial
+#EVO_BUILD_TYPE := Unofficial
 
 # Evolution X overlays
 PRODUCT_PACKAGES += \
@@ -41,3 +41,10 @@ PRODUCT_PACKAGES += \
 # Additional packages
 PRODUCT_PACKAGES += \
   OpenEUICC
+
+# Extra Stuffs
+INFINITY_MAINTAINER := FARHAN•AFK
+TARGET_BUILD_VIMUSIC := true
+USE_MOTO_CALCULATOR := true
+# Boot animation resolution.
+TARGET_BOOT_ANIMATION_RES := 720
