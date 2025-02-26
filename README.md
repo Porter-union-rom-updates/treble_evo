@@ -22,7 +22,7 @@ repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/man
 ## Clone the Manifest
 This adds necessary dependencies for the Evolution X GSI.
 ```bash
-git clone https://github.com/mytja/treble_manifest.git -b evo-vic .repo/local_manifests
+git clone https://github.com/mytja/treble_manifest.git -b inf .repo/local_manifests
 ```
 
 ## Sync the repository
