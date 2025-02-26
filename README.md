@@ -16,7 +16,7 @@ cd ~/evo
 
 ## Initalize the Treble Evolution X repo
 ```bash
-repo init --depth=1 -u https://github.com/Evolution-X/manifest -b vic
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 15 -g default,-mips,-darwin,-notdefault
 ```
 
 ## Clone the Manifest
