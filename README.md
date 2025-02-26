@@ -67,8 +67,7 @@ In the ROM folder (`~/evo`), run this to start compilation:
 source build/envsetup.sh
 
 ccache -M 50G -F 0
-
-lunch evolution_arm64_bgN-ap4a-userdebug 
+lunch infinity__arm64_bgN-ap4a-userdebug 
 
 make systemimage -j$(nproc --all)
 ```
